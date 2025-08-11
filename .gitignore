@@ -1,0 +1,3 @@
+temperature-backend/target
+temperature-backend/Cargo.lock
+.vscode

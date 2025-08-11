@@ -1,0 +1,9 @@
+Thank you for installing {{ .Chart.Name }}!
+
+Your release is named {{ .Release.Name }}.
+
+To access the frontend: http://{{ .Values.ingress.host }}
+
+Backend API: http://{{ .Values.ingress.host }}/api/convert
+
+Run `kubectl port-forward svc/{{ .Release.Name }}-frontend 80:80` for local testing if no Ingress.
